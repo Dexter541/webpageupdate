@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Indexpage.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topsection">
+       
+            <header>
+                <img src="pictures/logo.png" id="logo">
+                
+                <nav>
+                    <a href="#" class="hide-desktop">
+                        <img src="pictures/ham.svg" alt="toggle menu" class="menu" id="menu">
+                    </a>
+                    <ul class="show-desktop hide-mobile" id="nav">
+                        <li id="exit" class="exit-btn hide-desktop">
+                            <img src="pictures/exit2.png" alt="exit menu">
+                        </li>
+                        <li><a  href="#home">Home</a></li>
+                        <li><a  href="#checkout">Checkout</a></li>
+                        <li><a  href="Signuppage.html">Signup</a></li>
+                        <li><a  href="Loginpage.html">Login</a></li>
+                        <li><a  href="#more">More</a></li>
+                    </ul>
+                
+                </nav>
+            </header>
+                <h2 class="welcometext">Welcome!</h2>
+                <h4  class="welcometext">Lets get your order</h4>
+        
+                <input type="search" placeholder="Search our delicious meals"  id="searchbox">
+                
+        </div>
+    </div>
+        <div class="mainsection">
+            
+                <div class="container images">
+                    <table >
+                        <tr>
+                            <td><img src="pictures/jollof.jpg"alt="Jollofrice" ></td>
+                            <td><img src="pictures/amala.jpg"alt="Amala" ></td>
+                            <td><img src="pictures/pasta.jpg"alt="pasta" ></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Jollof Rice</h3></td>
+                            <td><h3> Amala</h3></td>
+                            <td><h3>Pasta</h3></td>
+                        </tr>
+                    </table>
+                    
+                    <a class="viewall" href="Orderingpage.html">View all</a>
+                    <h2 class="heading">TOP PICKS</h2>
+                    <div class="wrapper">
+                        <div class="wrapperimages">
+                            <img src="pictures/rice.jpg"alt="whiterice" id="popularimage">
+                            <h2 class="popularmenutext">Whiterice & chicken</h2>
+                        </div>
+                        <div class="wrapperimages">
+                            <img src="pictures/newsemo.jpg"alt="semo" id="popularimage">
+                            <h2 class="popularmenutext">Semo & Egusi</h2>
+                        </div>
+                        <div class="wrapperimages">
+                            <img src="pictures/amalasideview.jpg"alt="amala" id="popularimage">
+                            <h2 class="popularmenutext">Amala & Gbegiri</h2>
+                        </div>
+                        <div class="wrapperimages">
+                            <img src="pictures/newjollof.jpg"alt="jollofrice" id="popularimage">
+                            <h2 class="popularmenutext">Smokey Jollof & Chicken</h2>
+                        </div>
+                    </div>
+                    
+                <div>
+                    
+        </div>
+        
+      
+        </div>
+        <div class="booking">
+            <img src="pictures/booking.jpg" class="outdoorimage">
+            <h2 class="bookingtxt">Outdoor Events ?</h2>
+            <h3 class="bookingtxt">We got you covered</h3>
+            <h4 class="bookingtxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eum, quia perspiciatis laboriosam aspernatur aliquam necessitatibus suscipit repellat, id cum iure similique facere recusandae sunt tenetur ut molestiae sequi maxime!</h4>
+        </div>
+        <div class="opensection">
+            <img src="pictures/openimage.jpg" class="opensectionheroimage">
+            <div class="opensectiontext">
+                <h2>Come visit us</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque, ipsa nostrum quam reiciendis placeat, odio dignissimos earum est beatae quas laborum quasi ipsum nobis aspernatur quis iste quibusdam provident.</h4>
+                
+            </div>
+        </div>
+                
+        
+            <footer>
+                <div class="newsletter">
+                    <h2 class="bottomtext" >Stay in touch with us</h2>
+                    <h4 class="bottomtext">Sign up to out newsletter for the latest updates on our meals and services</h3>
+                    <input type="text" placeholder="Enter your email">
+                    <p><button>Subscribe</button></p> 
+                    <h5 class="bottomtext">We wont spam we promise</h5>
+                </div>
+                <div class="bottomsection">
+                    <ul>
+                        <li>Enquires ronkynugba700@gmail.com</li>
+                        <li>Contacts: <span>08045787552</span> </li>
+                        <li><a href="#booking">Bookings</a></li>
+                        <li><a href="Signuppage.html">Signup</a></li>
+                        <li><a href="Loginpage.html">Login</a></li>
+                        <li class="copyright">FOODAFFAIRS 2023</li>
+                    
+                    </ul>
+                </div>
+            </footer>
+                    
+
+                </div>
+        </div>
+    </div> 
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>

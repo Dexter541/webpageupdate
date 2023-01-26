@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+    margin: 10% 0 0 0;
+    
+    
+
+
+}
+.header{
+  
+    font-weight:600;
+   
+}
+ul {
+    list-style-type: none;
+    margin: 0 ;
+    padding: 0;
+    
+}
+ul li{
+    margin-top: 3%;
+   
+}
+ul li input{
+    
+    font-size: medium;
+    width: 90%;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 6px;
+    border: 1px solid black;
+
+}
+input:focus{
+    border: 1.5px solid rgb(255, 115, 0);
+
+    outline: none;
+    
+
+}
+ button{
+    font-size: medium;
+    font-weight: bold;
+    width: 97%;
+    height: 50px;
+    border-radius: 5px;
+    border-color:rgb(255, 115, 0);
+    background-color: rgb(255, 115, 0);;
+    color: white;
+}
+button:hover{
+    background-color: rgb(223, 89, 0);
+}
+h4,a{
+    display: inline-flex;
+}
+h4{
+    font-weight:500;
+}
+
+@media only screen and (min-width: 500px){
+    .container{
+    
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+ 
+}
+@media only screen and (min-width: 650px){
+    .container{
+   
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+
+       
+    }
+   
+}
+
+@media only screen and (min-width: 875px)  {
+    .container{
+      
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;        
+
+       
+    }
+    
+}
+@media only screen and (min-width: 1000px)  {
+   
+    .container{
+        margin-right: auto;
+        margin-left: auto;
+      
+        font-size: larger;
+        width: 30%;
+        text-align: center;
+       
+    }
+    
+}
+
+
+

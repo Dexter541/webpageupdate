@@ -1,0 +1,677 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+    margin: 0;
+
+
+}
+
+.wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+    overflow-y:auto ;
+    overscroll-behavior-inline:contain ;
+   
+}
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+.wrappercontainer{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    background-color: white;
+    height: 50px;
+    margin: 0;
+}
+.item{
+    padding: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    background-color: rgb(241, 232, 201);
+    border-radius: 20px;
+    inline-size: 70%;
+    object-fit: cover;
+    
+}
+.item a{
+    text-decoration: none;
+    color: black;
+}
+.item a:focus{
+    color: orange;
+}
+.item a:hover{
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+.topsection ul{
+    text-align: right;
+    margin: 0 ;
+    padding: 0;
+    list-style-type: none;
+}
+.subtext{
+    display: flex;
+    text-align: left;
+    position: relative;
+    left: 10px;
+}
+h2{
+    position: relative;
+    top: 20px;
+    
+}
+#previewtext{
+    color: gray;
+}
+header {
+    display: flex;
+   
+    justify-content: space-between;
+}
+#logo{
+    width: 30%;
+    text-align: left;
+    
+}
+
+.navigation {
+    width: 25px;
+    margin-top: 45%;
+}
+.hide-mobile {
+    display: none;
+}
+
+#searchbox{
+    width: 97%;
+    height: 40px;
+    background-image: url("pictures/searchicon2.png");
+    background-position: 15px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding-left: 50px; 
+    margin-left: 8px;
+
+    margin-bottom: 15px;
+  
+  
+}
+#searchbox:active{
+    border-color: none;
+
+}
+.searchboxcontainer{
+    text-align:left ;
+}
+#searchbox::placeholder{
+    font-size: medium;
+    word-spacing: 0.1em;
+}
+
+
+.menu li{
+    display:inline-flex;
+    height: 30px;
+    justify-content: space-between;
+    font: bold;
+    font-size: larger;
+    padding: 0;
+    margin: 0;
+    gap:1rem;
+}
+.menu li a{
+    width: 100%;
+    text-align: center;
+    
+}
+.menu li:hover{
+    background-color: rgb(255, 166, 0);
+}
+
+
+
+.food li .menuwrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+   
+}
+
+.backtotop{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    
+}
+
+
+
+
+.menuimages{
+    border-radius: 6px;
+    margin-right: 20px;
+    width: 30%;
+    height:fit-content;
+    object-fit:fill;
+    
+    
+}
+.imagetext{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+  
+}
+.imagetext h3,p{
+    position: relative;
+    bottom: 20px;
+}
+.price{
+    text-align: left;
+    font-size: larger;
+    font-weight:600;
+    
+
+}
+.price,.orderbutton{
+    display: inline;
+}
+.orderbutton{
+    position: relative;
+    left: 50px;
+}
+.orderbutton button{
+    width:30%;
+    height: 50px;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+    color: white;
+    border-color:rgb(255, 115, 0);;;
+    background-color: rgb(255, 115, 0);;;
+   
+}
+
+
+  nav ul {
+    position: fixed;
+    width: 50%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36,41,44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin-top: 0%;
+    padding: 1em 2em;
+    background-color: rgb(49, 55, 59);
+}
+
+nav ul li a:hover {
+    background-color: rgb(65, 73, 78);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: 1.3em;
+    position: relative;
+    left: 20px;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img {
+  
+    cursor: pointer;
+}
+
+.itemquantity{
+    display: inline-flex;
+    justify-content: space-around;
+    padding-right: 30px;
+    margin-top:6px ;
+   
+}
+.itemquantity h4{
+    margin-bottom: 15px;
+    margin: 0;
+}
+
+#jollofmenu{
+    display: none;
+   
+}
+#amalamenu{
+    display: none;
+}
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    right: inherit;
+}
+
+
+.selectionpopup{
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    height: 100%;
+    overflow-y:auto ;
+    overflow-x: hidden;
+    overscroll-behavior-inline:contain ;
+
+    text-align: center;
+    position: relative;
+}
+.close{
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;   
+}
+
+.heroimage{
+    border-radius: 6px;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-top: 35px;
+    width: 60%;
+    
+}
+.heroimagetext{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    max-width:94%;
+  
+}
+td{
+    font-size: larger;
+}
+.sides{
+    margin-left: 20px;
+}
+.sides li {
+    list-style-type: none;
+    text-align: left;
+    margin-right: 80px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: 40px;
+}
+.sidesli p,h4{
+    display: inline;
+}
+.checkbox{
+    
+    padding-right: 50px;
+}
+
+
+
+.placeorderbutton{
+    font-size: medium;
+    width: 105%;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 5px;
+    
+    border-color:rgb(255, 115, 0);;;
+    background-color: rgb(255, 115, 0);;;
+    color: white;
+    margin-top: 20px;
+}
+.placeorderbutton:hover{
+    background-color: rgb(223, 89, 0);
+}
+
+#specialrequests{
+    width:103%;
+    height: 70px;
+
+    margin-top: 30px;
+    border-radius: 6px;
+    border-color: black;
+    padding-bottom: 50px;
+    font-size: medium;
+   
+}
+
+
+.box{
+    display: flex;
+}
+.inputfilled{
+    width:18px;
+    margin-top: 4px;
+    outline: none;
+    font-size: medium;
+    border: white;
+}
+
+
+
+
+
+@media only screen and (max-width: 366px){
+    .menuimages{
+        object-fit:scale-down;
+    }
+    .checkbox{
+   
+    padding-right: 50px;
+    }
+    .orderbutton{
+      
+        left: 0px;
+    }
+    .orderbutton button{
+        width:50%;
+    }
+   
+
+
+}
+@media only screen and (min-width: 500px){
+    .container{
+    
+        font-size: large;
+       
+    }
+    .menuimages{
+        border-radius: 6px;
+        margin-right: 20px;
+        width: 20%;
+       
+    }
+    #logo{
+        width: 20%;
+        
+        
+    }
+    .itemquantity{
+       
+        padding-right: 100px;
+       
+    }
+    
+}
+@media only screen and (min-width: 650px){
+    .container{
+    
+        font-size: large;
+       
+    }
+    .menuimages{
+        border-radius: 6px;
+        margin-right: 20px;
+        width: 15%;
+       
+    }
+    #logo{
+        width: 15%;
+        
+        
+    }
+   
+}
+@media only screen and (min-width: 750px){
+
+
+}
+@media only screen and (min-width: 875px) {
+    .container{
+    
+        font-size: large;
+   
+       
+    }
+    .menuimages{
+        border-radius: 6px;
+        margin-right: 20px;
+        width: 20%;
+       
+    }
+    #logo{
+        width: 10%;
+
+    }   
+    .wrapper{
+        display:list-item ;
+        width: 10%;
+        float: left;
+    
+        
+    }
+    .item{
+        text-align: left;
+        background-color: white;
+        border-radius: 20px;
+        text-decoration: underline;
+    }
+
+    .flexcontainer{
+        float: left;
+        margin-left: 50px;
+        width: 70%;
+       
+    
+   
+    } 
+    
+   
+     .searchboxcontainer{
+         margin-left: 60px;
+     }
+    .welcometext{
+     margin-left: 60px;
+    }
+    
+    .selectionpopup{
+    
+        max-width: 50%;
+        height: 75%;
+
+    }
+    .close{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        cursor: pointer;
+  
+    }
+}
+@media only screen and (min-width: 1000px)  {
+    .container{
+      
+        font-size: medium;
+       
+    }
+    #logo{
+        width: 8%;
+        margin-left: 60px;
+        
+        
+    }
+
+    .menuimages{
+        border-radius: 10px;
+        margin-right: 20px;
+        width: 27%;
+       
+    }
+    .food li{
+        width: 50%;
+    }
+    #searchbox{
+        width: 55%;
+    }
+    .search{
+       position: relative;
+       right: 45px;
+    }
+    .show-desktop {
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        float: left;
+        margin-right: 35px;
+    }
+
+    nav ul li a {
+        color: black;
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 1em;
+    
+    }
+
+    nav ul li a:hover {
+        background-color: inherit;
+    }
+   
+    .wrapper{
+        display:list-item ;
+        width: 10%;
+        float: left;
+        margin-left: 10px;
+        color: grey;
+    
+        
+    }
+    .item{
+        text-align: left;
+        background-color: white;
+        border-radius: 20px;
+        border-radius: 0;
+        text-decoration: underline;
+    }
+    .flexcontainer{
+        float: left;
+        margin-left: 30px;
+        margin-right: 15px;
+        width: 45%;
+        overflow-x: hidden;
+      
+    }
+  
+    .food hr{
+        width: 200%;
+        height: 1px;
+        color: black;
+        background-color: black;
+    }
+    .food li .menuwrapper {
+        display: flex;
+        width: 200%;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        color: black;
+        text-decoration: none;
+      
+       
+    }
+
+    
+    nav li  :hover{
+        color: rgb(255, 115, 0);
+  
+    }
+    
+    
+    button{
+        font-size: medium;
+        width: 90%;
+        height: 50px;
+        font-weight: bold;
+        border-radius: 5px;
+        border-color:rgb(255, 115, 0);
+        background-color: rgb(255, 115, 0);
+        color: white;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(223, 89, 0);
+    }v
+    .searchboxcontainer{
+        margin-left: 60px;
+    }
+   .welcometext{
+    margin-left: 60px;
+   }
+
+   
+
+
+}
+@media only screen and (min-width: 1080px)  {
+    .menuimages{
+        width: 20%;
+    }
+    .itemquantity{
+        margin-right: 150px;
+        margin-left: 50px;
+    }
+}
